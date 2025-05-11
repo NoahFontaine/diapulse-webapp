@@ -21,7 +21,7 @@ const Home = () => {
                 onClick={() => navigate('/signin')}
                 style={{ position: 'absolute', top: '1rem', right: '1rem' }}
             >
-                Sign In
+                Click here to Log in/Register
             </Button>
         </div>
     );

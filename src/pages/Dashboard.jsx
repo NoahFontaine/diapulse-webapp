@@ -17,16 +17,16 @@ const Dashboard = () => {
         <div style={{ padding: '2rem' }}>
             <Button
                 type="primary"
-                icon={<LogoutOutlined />}
+                icon={<LogoutOutlined/>}
                 onClick={handleLogout}
                 style={{ position: 'absolute', top: '1rem', right: '1rem' }}
             >
-                Logout
+                Log out
             </Button>
             <Typography.Title level={2}>Dashboard</Typography.Title>
             {/* Add your dashboard content here */}
         </div>
     );
-};
+}
 
 export default Dashboard;
