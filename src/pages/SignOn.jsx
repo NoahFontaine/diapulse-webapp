@@ -70,6 +70,7 @@ const SignOn = () => {
         open={isModalVisible}
         onCancel={() => setIsModalVisible(false)}
         footer={null}
+        style={{ top: '500px' }} // Set the top position
       >
         <Form form={registerForm} onFinish={handleSignUp} layout="horizontal">
           <Form.Item label="Email" name="email" rules={[{ required: true, type: 'email' }]}>
