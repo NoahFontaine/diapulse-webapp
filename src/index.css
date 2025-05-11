@@ -15,6 +15,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.88); /* Ant Design's default text color */
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #ffffff; /* White background */
+}
+
+/* If you're using Ant Design's dark theme, add these styles */
+.ant-theme-dark input:-webkit-autofill,
+.ant-theme-dark input:-webkit-autofill:hover,
+.ant-theme-dark input:-webkit-autofill:focus,
+.ant-theme-dark input:-webkit-autofill:active {
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.85); /* Ant Design's dark theme text color */
+  box-shadow: inset 0 0 20px 20px #141414; /* Dark background */
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;

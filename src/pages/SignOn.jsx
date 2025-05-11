@@ -23,7 +23,7 @@ const SignOn = () => {
   const handleSignIn = async ({ email, password }) => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/home');
+      navigate('/dashboard');
     } catch (err) {
       alert(err.message);
     }
@@ -33,7 +33,7 @@ const SignOn = () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       setIsModalVisible(false);
-      navigate('/home');
+      navigate('/dashboard');
     } catch (err) {
       alert(err.message);
     }

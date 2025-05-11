@@ -1,16 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
 import SignOn from './pages/SignOn';
 import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
 import PrivateRoute from './routes/PrivateRoute';
 import { AuthProvider } from './authentication/AuthContext';
 
 const App = () => (
   <AuthProvider>
     <Routes>
-      <Route path="/" element={<SignOn />} />
-      <Route path="/home" element={
+      <Route path="/" element={<Home />} />
+      <Route path="/signin" element={<SignOn />} />
+      <Route path="/dashboard" element={
         <PrivateRoute>
-          <Home />
+          <Dashboard />
         </PrivateRoute>
       } />
     </Routes>

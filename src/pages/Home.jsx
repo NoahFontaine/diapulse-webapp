@@ -1,22 +1,30 @@
-import { Button, Typography } from 'antd';
 import { useNavigate } from 'react-router-dom';
-import { signOut } from 'firebase/auth';
-import { auth } from '../authentication/firebase';
+import { Button, Typography } from 'antd';
+import { LoginOutlined } from '@ant-design/icons';
 
 const Home = () => {
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  const handleLogout = async () => {
-    await signOut(auth);
-    navigate('/');
-  };
+    return (
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            padding: '2rem'
+        }}>
+            <Typography.Title>Welcome to DiaPulse</Typography.Title>
+            {/* Add your home page content here */}
 
-  return (
-    <div style={{ padding: 40 }}>
-      <Typography.Title level={2}>Welcome Home!</Typography.Title>
-      <Button onClick={handleLogout}>Logout</Button>
-    </div>
-  );
+            <Button
+                type="primary"
+                icon={<LoginOutlined />}
+                onClick={() => navigate('/signin')}
+                style={{ position: 'absolute', top: '1rem', right: '1rem' }}
+            >
+                Sign In
+            </Button>
+        </div>
+    );
 };
 
 export default Home;
