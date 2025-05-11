@@ -40,7 +40,7 @@ const SignOn = () => {
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', height: '100vh', width: '100vw', paddingTop: '8rem' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', height: '90vh', width: '100vw', paddingTop: '8rem' }}>
       <Card style={{ width: 500 }}>
         <Typography.Title level={3}>Please Sign In</Typography.Title>
         <Form form={form} onFinish={handleSignIn} layout="horizontal">

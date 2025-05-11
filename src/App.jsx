@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import SignOn from './pages/SignOn';
 import Home from './pages/Home';
-import PrivateRoute from './pages/PrivateRoute';
+import PrivateRoute from './routes/PrivateRoute';
 import { AuthProvider } from './authentication/AuthContext';
 
 const App = () => (
