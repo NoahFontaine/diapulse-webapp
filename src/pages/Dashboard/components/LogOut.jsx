@@ -3,14 +3,12 @@ import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { LogoutOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
-import { useAuth } from "../../../authentication/AuthContext.jsx";
+import { useAuth } from "../../../authentication/AuthContext";
 
 const StyledButton = styled( Button )`
-    border: none !important;
-
+    
     &:hover,
     &:focus {
-        border: none !important;
         font-weight: bold !important;
         background: transparent !important;
         box-shadow: none !important;

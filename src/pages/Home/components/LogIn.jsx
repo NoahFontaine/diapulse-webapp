@@ -4,11 +4,9 @@ import { LoginOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
 
 const StyledButton = styled(Button)`
-    border: none !important;
 
     &:hover,
     &:focus {
-        border: none !important;
         font-weight: bold !important;
         background: transparent !important;
         box-shadow: none !important;
